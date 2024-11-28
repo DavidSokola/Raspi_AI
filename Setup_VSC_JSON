@@ -1,0 +1,22 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Python File with LCI",
+            "type": "python",
+            "request": "launch",
+            "program": "/home/david/hailo-rpi5-examples/basic_pipelines/detectionD.py",
+            "pythonPath": "/home/david/hailo-rpi5-examples/venv_hailo_rpi5_examples/bin/python",
+            "args": [
+                "--labels-json", "/home/david/hailo-rpi5-examples/resources/barcode-labels.json",
+                "--hef", "/home/david/hailo-rpi5-examples/resources/yolov8s-hailo8l-barcode.hef",
+                "--input", "rpi"
+            ],
+            "env": {
+                "TAPPAS_WORKSPACE": "/local/workspace/tappas",
+                "TAPPAS_POST_PROC_DIR": "/local/workspace/tappas/apps/h8/gstreamer/libs/post_processes/",
+                "DEVICE_ARCHITECTURE": "set_this_dynamically_based_on_script"
+            }
+        }
+    ]
+}
