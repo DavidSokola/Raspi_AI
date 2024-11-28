@@ -1,2 +1,2 @@
-Home ? navod
-PY code
+MAIN  -doc and navod
+PY -code
